@@ -1,0 +1,141 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    height: 13vh;
+}
+
+#container{
+    height: 80vh;
+    width: 100%;
+    background-color: bisque;
+}
+
+nav{
+    height: 78vh;
+    width: 13vw;
+    background-color: coral; 
+    padding: 1vh 1vw;
+}
+
+main{
+    height: 78.1vh;
+    width: 83vw;
+    overflow: auto;
+}
+
+footer{
+    height: 7vh;
+    background-color: black;
+    color: white;
+    line-height: 7vh;
+    vertical-align: middle;
+}
+
+.logo{
+    height: 10vh;
+    margin-top: 1vh;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+
+.brand{
+    margin-top: 0.5vh;
+    font-size: 35px;
+}
+
+.sub-heading, .heading{
+    color: red;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.heading{
+    font-size: 30px;
+    display: block;
+}
+
+nav ul li a{
+    display: block;
+}
+
+nav ul li a:hover{
+    color: white;
+    background-color: darksalmon;
+}
+
+.tagline{
+    font-size: 20px;
+}
+
+.detail, .panel, main{
+    float: right;
+}
+
+.info, .logo, nav{
+    float: left;
+}
+
+.panel{
+    margin: 5vh 2vw;
+}
+
+.panel ul, nav ul{
+    list-style: none;
+}
+
+.panel ul li{
+    display: inline-block;
+}
+
+.panel ul li a, nav ul li a{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.panel ul li a:hover{
+    color: white;
+    background-color: purple;
+}
+
+/* text-align: center */
+.panel ul li a, nav ul li a, .heading, footer{
+    text-align: center;
+}
+
+/* text-transform: capitalize */
+input[value='logout'], .panel ul li a, nav ul li a, .sub-heading, .heading, .brand, .panel ul li{
+    text-transform: capitalize;
+}
+
+input[value='Change'], .change{
+    background-color: Orange;
+    color: bisque;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: solid 1px transparent;
+}
+
+input[value='Change']:hover, .change:hover{
+    background-color: transparent;
+    color: Orange;
+    border: solid 1px orange;
+}
+
+input[value='logout']{
+    background-color: purple;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: solid 1px purple;
+}
+
+input[value='logout']:hover{
+    background-color: white;
+    color: purple;
+    border: solid 1px purple;
+}

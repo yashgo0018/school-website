@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="admin_admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" class="favicon" runat="server" id="favicon"/>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+        console.log("hello")
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <header>
+        <section class="info">
+            <asp:Image ID="Image1" runat="server" CssClass="logo"></asp:Image>
+            <section class="detail">
+            <h1 class="brand"><asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></h1>
+            <h4 class="tagline"><asp:Label ID="Label2" runat="server" Text="Label"></asp:Label></h4>
+            </section>
+        </section>
+        <section class="panel">
+            <ul>
+                <li>Hi, <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label></li>
+                <li><asp:Button ID="Button1" runat="server" Text="logout" onclick="Button1_Click"></asp:Button></li>
+            </ul>
+        </section>
+    </header>
+    <section id="container">
+        <nav>
+            <ul>
+                <li><asp:HyperLink ID="HyperLink1" NavigateUrl="~/admin/home.aspx" runat="server">Site Identity</asp:HyperLink></li>
+                <li><asp:HyperLink ID="HyperLink2" NavigateUrl="~/admin/home_page.aspx" runat="server">Edit Home Page</asp:HyperLink></li>
+                <li><asp:HyperLink ID="HyperLink3" NavigateUrl="~/admin/home.aspx" runat="server">Edit About Page</asp:HyperLink></li>
+                <li><asp:HyperLink ID="HyperLink4" NavigateUrl="~/admin/home.aspx" runat="server">Edit Blog</asp:HyperLink></li>
+                <li><asp:HyperLink ID="HyperLink5" NavigateUrl="~/admin/home.aspx" runat="server">Edit Course Page</asp:HyperLink></li>
+            </ul>
+        </nav>
+        <main>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </main>
+    </section>
+    <footer>
+        Prelude Public School&copy; 2018. All Rights Reserved.
+    </footer>
+    </form>
+</body>
+</html>
